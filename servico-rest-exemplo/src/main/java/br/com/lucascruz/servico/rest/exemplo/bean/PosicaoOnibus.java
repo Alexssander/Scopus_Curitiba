@@ -9,7 +9,7 @@ package br.com.lucascruz.servico.rest.exemplo.bean;
 public class PosicaoOnibus {
 	
 	/*
-	 * Data e Hora do registro da posição Ex:("06/07/2016 08:50")
+	 * Data e Hora do registro da posição Ex:("06/07/2016 08:50:30")
 	 */
 	private String dataHora;
 	/*

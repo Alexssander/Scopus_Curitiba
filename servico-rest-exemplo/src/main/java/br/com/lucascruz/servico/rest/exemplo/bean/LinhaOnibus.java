@@ -60,7 +60,7 @@ public class LinhaOnibus {
 
 	public List<PosicaoOnibus> getPosicoes() {
 		if(posicoes == null)
-			return new ArrayList<>();
+			posicoes = new ArrayList<>();
 		return posicoes;
 	}
 

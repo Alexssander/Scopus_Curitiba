@@ -48,6 +48,10 @@ public class LinhaOnibusController {
 			method=RequestMethod.GET,
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody List<PosicaoOnibus> getLinha(@PathVariable String linha){
-		return repository.findByLinha(linha).getPosicoes();
+		List<PosicaoOnibus> posicoes = null;
+		LinhaOnibus linhaOnibus = repository.findByLinha(linha);
+		if(linhaOnibus != null)
+			posicoes = linhaOnibus.getPosicoes();
+		return posicoes;
 	}
 }
