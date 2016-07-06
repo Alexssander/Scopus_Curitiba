@@ -6,7 +6,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import br.com.lucascruz.servico.rest.exemplo.bean.LinhaOnibus;
 
 @RepositoryRestResource
-public interface LinhaOnibusRepository extends MongoRepository{
+public interface LinhaOnibusRepository extends MongoRepository<LinhaOnibus,String>{
 
 	public LinhaOnibus findByLinha(String linha);
 	
